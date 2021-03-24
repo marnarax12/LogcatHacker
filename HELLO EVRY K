@@ -1,0 +1,381 @@
+--------- beginning of crash
+
+03-24 02:16:20.792  2056  2056 E AndroidRuntime: FATAL EXCEPTION: main
+
+03-24 02:16:20.792  2056  2056 E AndroidRuntime: Process: scd.lcex, PID: 2056
+
+03-24 02:16:20.792  2056  2056 E AndroidRuntime: java.lang.NullPointerException: Attempt to invoke interface method 'int android.content.SharedPreferences.getInt(java.lang.String, int)' on a null object reference
+
+03-24 02:16:20.792  2056  2056 E AndroidRuntime: at scd.lcex.FragmentLogcat.setButtonIcon(FragmentLogcat.java:319)
+
+03-24 02:16:20.792  2056  2056 E AndroidRuntime: at scd.lcex.FragmentLogcat.disconnectLogcatReader(FragmentLogcat.java:711)
+
+03-24 02:16:20.792  2056  2056 E AndroidRuntime: at scd.lcex.FragmentLogcat.applyAction(FragmentLogcat.java:560)
+
+03-24 02:16:20.792  2056  2056 E AndroidRuntime: at scd.lcex.ActivityMain$2.onClick(ActivityMain.java:431)
+
+03-24 02:16:20.792  2056  2056 E AndroidRuntime: at android.view.View.performClick(View.java:7192)
+
+03-24 02:16:20.792  2056  2056 E AndroidRuntime: at android.view.View.performClickInternal(View.java:7166)
+
+03-24 02:16:20.792  2056  2056 E AndroidRuntime: at android.view.View.access$3500(View.java:824)
+
+03-24 02:16:20.792  2056  2056 E AndroidRuntime: at android.view.View$PerformClick.run(View.java:27592)
+
+03-24 02:16:20.792  2056  2056 E AndroidRuntime: at android.os.Handler.handleCallback(Handler.java:888)
+
+03-24 02:16:20.792  2056  2056 E AndroidRuntime: at android.os.Handler.dispatchMessage(Handler.java:100)
+
+03-24 02:16:20.792  2056  2056 E AndroidRuntime: at android.os.Looper.loop(Looper.java:213)
+
+03-24 02:16:20.792  2056  2056 E AndroidRuntime: at android.app.ActivityThread.main(ActivityThread.java:8178)
+
+03-24 02:16:20.792  2056  2056 E AndroidRuntime: at java.lang.reflect.Method.invoke(Native Method)
+
+03-24 02:16:20.792  2056  2056 E AndroidRuntime: at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:513)
+
+03-24 02:16:20.792  2056  2056 E AndroidRuntime: at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:1101)
+
+03-24 02:16:44.885  2208  2208 F libc    : Fatal signal 31 (SIGSYS), code 1 (SYS_SECCOMP) in tid 2208 (dmesg), pid 2208 (dmesg)
+
+03-24 02:16:44.924  2211  2211 F DEBUG   : *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** ***
+
+03-24 02:16:44.925  2211  2211 F DEBUG   : Build fingerprint: 'HUAWEI/EML-L09/HWEML:10/HUAWEIEML-L09/10.0.0.172C792:user/release-keys'
+
+03-24 02:16:44.925  2211  2211 F DEBUG   : Revision: '0'
+
+03-24 02:16:44.925  2211  2211 F DEBUG   : ABI: 'arm64'
+
+03-24 02:16:44.926  2211  2211 F DEBUG   : Timestamp: 2021-03-24 02:16:44-0400
+
+03-24 02:16:44.926  2211  2211 F DEBUG   : pid: 2208, tid: 2208, name: dmesg  >>> dmesg <<<
+
+03-24 02:16:44.926  2211  2211 F DEBUG   : uid: 10156
+
+03-24 02:16:44.926  2211  2211 F DEBUG   : signal 31 (SIGSYS), code 1 (SYS_SECCOMP), fault addr --------
+
+03-24 02:16:44.926  2211  2211 F DEBUG   : Cause: seccomp prevented call to disallowed arm64 system call 116
+
+03-24 02:16:44.926  2211  2211 F DEBUG   :     x0  000000000000000a  x1  0000000000000000  x2  0000000000000000  x3  0000000000000000
+
+03-24 02:16:44.926  2211  2211 F DEBUG   :     x4  0000000040100401  x5  0908020002002000  x6  71616444ff786063  x7  7f7f7f7f7f7f7f7f
+
+03-24 02:16:44.926  2211  2211 F DEBUG   :     x8  0000000000000074  x9  0000000000000800  x10 0000007fff0b38b0  x11 0000007fff0b38e8
+
+03-24 02:16:44.926  2211  2211 F DEBUG   :     x12 0000007fff0b3930  x13 0000007d4b82d010  x14 0000000000000000  x15 aaaaaaaaaaaaaaab
+
+03-24 02:16:44.926  2211  2211 F DEBUG   :     x16 0000005e5147fed0  x17 0000007d4c407290  x18 0000007d4d06a000  x19 0000005e51485000
+
+03-24 02:16:44.926  2211  2211 F DEBUG   :     x20 0000000000000000  x21 0000007d4c4fd020  x22 0000005e51485028  x23 0000005e51482000
+
+03-24 02:16:44.926  2211  2211 F DEBUG   :     x24 0000000000000000  x25 0000000000000000  x26 0000000000000000  x27 0000000000000000
+
+03-24 02:16:44.926  2211  2211 F DEBUG   :     x28 0000000000000000  x29 0000007fff0b59d0
+
+03-24 02:16:44.926  2211  2211 F DEBUG   :     sp  0000007fff0b3980  lr  0000005e5143e3dc  pc  0000007d4c407298
+
+03-24 02:16:44.932  2211  2211 F DEBUG   : 
+
+03-24 02:16:44.932  2211  2211 F DEBUG   : backtrace:
+
+03-24 02:16:44.932  2211  2211 F DEBUG   :       #00 pc 00000000000ba298  /apex/com.android.runtime/lib64/bionic/libc.so (klogctl+8) (BuildId: 95e03d8a9f101c0f1d3d9458688aa085)
+
+03-24 02:16:44.932  2211  2211 F DEBUG   :       #01 pc 00000000000313d8  /system/bin/toybox (dmesg_main+404) (BuildId: 230b56fefa5048df13b5b128499c7087)
+
+03-24 02:16:44.932  2211  2211 F DEBUG   :       #02 pc 0000000000030a18  /system/bin/toybox (toy_exec_which+76) (BuildId: 230b56fefa5048df13b5b128499c7087)
+
+03-24 02:16:44.932  2211  2211 F DEBUG   :       #03 pc 0000000000030624  /system/bin/toybox (toybox_main+44) (BuildId: 230b56fefa5048df13b5b128499c7087)
+
+03-24 02:16:44.932  2211  2211 F DEBUG   :       #04 pc 0000000000030af0  /system/bin/toybox (main+112) (BuildId: 230b56fefa5048df13b5b128499c7087)
+
+03-24 02:16:44.932  2211  2211 F DEBUG   :       #05 pc 000000000006a050  /apex/com.android.runtime/lib64/bionic/libc.so (__libc_init+108) (BuildId: 95e03d8a9f101c0f1d3d9458688aa085)
+
+--------- beginning of system
+
+03-24 02:50:14.590  9948  9948 V ActivityThread: callActivityOnCreate
+
+03-24 02:50:14.638  9948  9948 D ActivityThread: add activity client record, r= ActivityRecord{a66458f token=android.os.BinderProxy@8f8d389 {scd.lcex/scd.lcex.ActivityMain}} token= android.os.BinderProxy@8f8d389
+
+03-24 02:53:38.939  9948  9948 D ActivityThread: Remove activity client record, r= ActivityRecord{a66458f token=android.os.BinderProxy@8f8d389 {scd.lcex/scd.lcex.ActivityMain}} token= android.os.BinderProxy@8f8d389
+
+03-24 02:58:59.645 15482 15482 D ActivityThread: Attach thread to application
+
+03-24 03:00:11.354 15888 15888 D ActivityThread: Attach thread to application
+
+03-24 03:00:19.634 15888 15888 V ActivityThread: callActivityOnCreate
+
+03-24 03:00:19.708 15888 15888 D ActivityThread: add activity client record, r= ActivityRecord{5c7f1ef token=android.os.BinderProxy@f747ca4 {scd.lcex/scd.lcex.ActivityMain}} token= android.os.BinderProxy@f747ca4
+
+--------- beginning of main
+
+03-24 03:06:25.980 18112 18112 I scd.lcex: Reinit property: dalvik.vm.checkjni= false
+
+03-24 03:06:25.984 18112 18112 E scd.lcex: Not starting debugger since process cannot load the jdwp agent.
+
+03-24 03:06:25.987 18112 18112 W re-initialized>: type=1400 audit(0.0:67048): avc: denied { read } for pid=18112 name="u:object_r:mmi_prop:s0" dev="tmpfs" ino=5011 scontext=u:r:untrusted_app_27:s0:c156,c256,c512,c768 tcontext=u:object_r:mmi_prop:s0 tclass=file permissive=0
+
+03-24 03:06:25.994 18112 18112 E libc    : Access denied finding property "runtime.mmitest.isrunning"
+
+03-24 03:06:25.997 18112 18112 D ActivityThread: Attach thread to application
+
+03-24 03:06:26.022 18112 18112 I scd.lcex: QarthPatchMonintor::Init
+
+03-24 03:06:26.022 18112 18112 I scd.lcex: 
+
+03-24 03:06:26.022 18112 18112 I scd.lcex: QarthPatchMonintor::StartWatch
+
+03-24 03:06:26.022 18112 18112 I scd.lcex: 
+
+03-24 03:06:26.022 18112 18131 I HwApiCacheMangerEx: apicache path=/storage/emulated/0 state=mounted key=scd.lcex#10156#256
+
+03-24 03:06:26.022 18112 18112 I scd.lcex: QarthPatchMonintor::WatchPackage: /data/hotpatch/fwkhotpatch/
+
+03-24 03:06:26.022 18112 18112 I scd.lcex: 
+
+03-24 03:06:26.022 18112 18112 I scd.lcex: QarthPatchMonintor::CheckAndWatchPatch: /data/hotpatch/fwkhotpatch/scd.lcex
+
+03-24 03:06:26.022 18112 18112 I scd.lcex: 
+
+03-24 03:06:26.022 18112 18112 I scd.lcex: QarthPatchMonintor::CheckAndWatchPatch: /data/hotpatch/fwkhotpatch/all
+
+03-24 03:06:26.022 18112 18112 I scd.lcex: 
+
+03-24 03:06:26.022 18112 18112 I scd.lcex: QarthPatchMonintor::Run
+
+03-24 03:06:26.022 18112 18112 I scd.lcex: 
+
+03-24 03:06:26.022 18112 18131 I HwApiCacheMangerEx: apicache path=/storage/emulated/0 state=mounted key=scd.lcex#10156#0
+
+03-24 03:06:26.023 18112 18134 I scd.lcex: QarthPatchMonintor::Reading
+
+03-24 03:06:26.023 18112 18134 I scd.lcex: 
+
+03-24 03:06:26.023 18112 18134 I scd.lcex: QarthPatchMonintor::CheckNotifyEvent
+
+03-24 03:06:26.023 18112 18134 I scd.lcex: 
+
+03-24 03:06:26.023 18112 18134 I scd.lcex: QarthPatchMonintor::CheckNotifyEvent before read
+
+03-24 03:06:26.023 18112 18134 I scd.lcex: 
+
+03-24 03:06:26.027 18112 18131 I AwareBitmapCacher: init processName:scd.lcex pid=18112 uid=10156
+
+03-24 03:06:26.030 18112 18136 E AwareLog: AtomicFileUtils: readFileLines file not exist: android.util.AtomicFile@58fc8f8
+
+03-24 03:06:26.030 18112 18136 E AwareLog: AtomicFileUtils: readFileLines file not exist: android.util.AtomicFile@54451d1
+
+03-24 03:06:26.041 18112 18112 V ActivityThread: callActivityOnCreate
+
+03-24 03:06:26.051 18112 18112 V HwWidgetFactory: : successes to get AllImpl object and return....
+
+03-24 03:06:26.058 18112 18112 I OverScrollerOptimization: start init SmartSlideOverScroller and get the overscroller config
+
+03-24 03:06:26.058 18112 18112 I OverScrollerOptimization: get the overscroller config
+
+03-24 03:06:26.093 18112 18112 D ActivityThread: add activity client record, r= ActivityRecord{751c7c9 token=android.os.BinderProxy@6e5985b {scd.lcex/scd.lcex.ActivityMain}} token= android.os.BinderProxy@6e5985b
+
+03-24 03:06:26.109 18112 18145 W HiTouch_HiTouchSensor: depended package hiTouch does n't exist!
+
+03-24 03:06:26.109 18112 18145 I HiTouch_HiTouchSensor: HiTouch restricted: system app HiTouch don't exist.
+
+03-24 03:06:26.109 18112 18145 D HiTouch_PressGestureDetector: onAttached, package=scd.lcex, windowType=1, mHiTouchRestricted=true
+
+03-24 03:06:26.118 18112 18138 I iGraphics: [0020080c] pn: scd.lcex, p: 18112
+
+03-24 03:06:26.118 18112 18138 I iGraphics: [0030080c] no spt app: scd.lcex
+
+03-24 03:06:26.138 18112 18138 D mali_winsys: EGLint new_window_surface(egl_winsys_display *, void *, EGLSurface, EGLConfig, egl_winsys_surface **, EGLBoolean) returns 0x3000
+
+03-24 03:06:26.147 18112 18138 W Gralloc3: mapper 3.x is not supported
+
+03-24 03:06:26.165 18112 18138 E         : APS:IFLoad:importExternalFunctions, search function createNewHwApsUtils failed, dlsym err:undefined symbol: createNewHwApsUtils
+
+03-24 03:06:26.165 18112 18138 D         : APS:importExternalFunctions OK
+
+03-24 03:06:26.167 18112 18112 I HwViewRootImpl: removeInvalidNode jank list is null
+
+03-24 03:06:27.202 18112 18112 V AudioManager: querySoundEffectsEnabled...
+
+03-24 03:06:29.876 18112 18112 D OverScrollerOptimization: fling time is flingTime = 3.549354504645363 velocity = 27000
+
+03-24 03:06:29.876 18112 18112 D OverScrollerOptimization: fling time is flingTime = 3.549354504645363 velocity = 27000
+
+03-24 03:06:30.024 18112 18112 I HwViewRootImpl: removeInvalidNode all the node in jank list is out of time
+
+03-24 03:06:30.472 18112 18112 D OverScrollerOptimization: fling time is flingTime = 3.549354504645363 velocity = 27000
+
+03-24 03:06:30.472 18112 18112 D OverScrollerOptimization: fling time is flingTime = 3.549354504645363 velocity = 27000
+
+03-24 03:06:30.938 18112 18112 D OverScrollerOptimization: fling time is flingTime = 3.549354504645363 velocity = 27000
+
+03-24 03:06:30.938 18112 18112 D OverScrollerOptimization: fling time is flingTime = 3.549354504645363 velocity = 27000
+
+03-24 03:06:31.028 18112 18112 D AwareBitmapCacher: handleInit switch not opened pid=18112
+
+03-24 03:06:32.711 18112 18112 D OverScrollerOptimization: fling time is flingTime = 3.549354504645363 velocity = -27000
+
+03-24 03:06:32.711 18112 18112 D OverScrollerOptimization: fling time is flingTime = 3.549354504645363 velocity = -27000
+
+03-24 03:06:34.006 18112 18112 V AudioManager: querySoundEffectsEnabled...
+
+03-24 03:06:36.293 18112 18112 V AudioManager: querySoundEffectsEnabled...
+
+03-24 03:06:36.373 18112 18216 W HiTouch_HiTouchSensor: depended package hiTouch does n't exist!
+
+03-24 03:06:36.374 18112 18216 I HiTouch_HiTouchSensor: HiTouch restricted: system app HiTouch don't exist.
+
+03-24 03:06:36.374 18112 18216 D HiTouch_PressGestureDetector: onAttached, package=scd.lcex, windowType=2, mHiTouchRestricted=true
+
+03-24 03:06:36.397 18112 18138 D mali_winsys: EGLint new_window_surface(egl_winsys_display *, void *, EGLSurface, EGLConfig, egl_winsys_surface **, EGLBoolean) returns 0x3000
+
+03-24 03:06:37.493 18112 18218 D HwFrameworkSecurityPartsFactory: HwFrameworkSecurityPartsFactory in.
+
+03-24 03:06:37.493 18112 18218 I HwFrameworkSecurityPartsFactory: add HwFrameworkSecurityPartsFactory to memory.
+
+03-24 03:06:37.497 18112 18138 W libEGL  : EGLNativeWindowType 0x7bac229650 disconnect failed
+
+03-24 03:06:37.515 18112 18112 W InputEventReceiver: Attempted to finish an input event but the input event receiver has already been disposed.
+
+03-24 03:06:37.519 18112 18219 W HiTouch_HiTouchSensor: depended package hiTouch does n't exist!
+
+03-24 03:06:37.519 18112 18219 I HiTouch_HiTouchSensor: HiTouch restricted: system app HiTouch don't exist.
+
+03-24 03:06:37.519 18112 18219 D HiTouch_PressGestureDetector: onAttached, package=scd.lcex, windowType=2, mHiTouchRestricted=true
+
+03-24 03:06:37.547 18112 18138 D mali_winsys: EGLint new_window_surface(egl_winsys_display *, void *, EGLSurface, EGLConfig, egl_winsys_surface **, EGLBoolean) returns 0x3000
+
+03-24 03:06:37.570 18112 18138 W libEGL  : EGLNativeWindowType 0x7bac229650 disconnect failed
+
+03-24 03:06:38.042 18112 18137 D ZrHung.AppEyeUiProbe: not watching, wait.
+
+03-24 03:06:47.308 18112 18112 I HwViewRootImpl: removeInvalidNode all the node in jank list is out of time
+
+03-24 03:06:47.535 18112 18137 D ZrHung.AppEyeUiProbe: restart watching
+
+03-24 03:06:49.101 18112 18112 V AudioManager: querySoundEffectsEnabled...
+
+03-24 03:06:50.694 18112 18112 V AudioManager: querySoundEffectsEnabled...
+
+03-24 03:06:51.050 18112 18463 W HiTouch_HiTouchSensor: depended package hiTouch does n't exist!
+
+03-24 03:06:51.050 18112 18463 I HiTouch_HiTouchSensor: HiTouch restricted: system app HiTouch don't exist.
+
+03-24 03:06:51.050 18112 18463 D HiTouch_PressGestureDetector: onAttached, package=scd.lcex, windowType=2, mHiTouchRestricted=true
+
+03-24 03:06:51.083 18112 18138 D mali_winsys: EGLint new_window_surface(egl_winsys_display *, void *, EGLSurface, EGLConfig, egl_winsys_surface **, EGLBoolean) returns 0x3000
+
+03-24 03:06:52.066 18112 18112 V AudioManager: querySoundEffectsEnabled...
+
+03-24 03:06:52.082 18112 18138 W libEGL  : EGLNativeWindowType 0x7b3836c190 disconnect failed
+
+03-24 03:06:52.082 18112 18138 D OpenGLRenderer: endAllActiveAnimators on 0x7ba8ae2900 (RippleDrawable) with handle 0x7bac225160
+
+03-24 03:06:53.807 18112 18112 V AudioManager: querySoundEffectsEnabled...
+
+03-24 03:06:54.937 18112 18112 V AudioManager: querySoundEffectsEnabled...
+
+03-24 03:06:55.000 18112 18467 W HiTouch_HiTouchSensor: depended package hiTouch does n't exist!
+
+03-24 03:06:55.001 18112 18467 I HiTouch_HiTouchSensor: HiTouch restricted: system app HiTouch don't exist.
+
+03-24 03:06:55.001 18112 18467 D HiTouch_PressGestureDetector: onAttached, package=scd.lcex, windowType=2, mHiTouchRestricted=true
+
+03-24 03:06:55.034 18112 18138 D mali_winsys: EGLint new_window_surface(egl_winsys_display *, void *, EGLSurface, EGLConfig, egl_winsys_surface **, EGLBoolean) returns 0x3000
+
+03-24 03:07:06.671 18112 18112 W Thread-9: type=1400 audit(0.0:67053): avc: granted { write } for pid=18112 name="LogcatX" dev="sdcardfs" ino=17256 scontext=u:r:untrusted_app_27:s0:c156,c256,c512,c768 tcontext=u:object_r:sdcardfs:s0 tclass=dir
+
+03-24 03:07:06.671 18112 18112 W Thread-9: type=1400 audit(0.0:67054): avc: granted { add_name } for pid=18112 name="Log_2021-03-24_03-07-06.txt" scontext=u:r:untrusted_app_27:s0:c156,c256,c512,c768 tcontext=u:object_r:sdcardfs:s0 tclass=dir
+
+03-24 03:07:06.675 18112 18112 W Thread-9: type=1400 audit(0.0:67056): avc: granted { write open } for pid=18112 path="/storage/emulated/0/LogcatX/Log_2021-03-24_03-07-06.txt" dev="sdcardfs" ino=6651 scontext=u:r:untrusted_app_27:s0:c156,c256,c512,c768 tcontext=u:object_r:sdcardfs:s0 tclass=file
+
+03-24 03:07:06.684 18112 18138 W libEGL  : EGLNativeWindowType 0x7b3836c050 disconnect failed
+
+03-24 03:07:06.708 18112 18112 W InputEventReceiver: Attempted to finish an input event but the input event receiver has already been disposed.
+
+03-24 03:07:06.711 18112 18474 W HiTouch_HiTouchSensor: depended package hiTouch does n't exist!
+
+03-24 03:07:06.711 18112 18474 I HiTouch_HiTouchSensor: HiTouch restricted: system app HiTouch don't exist.
+
+03-24 03:07:06.711 18112 18474 D HiTouch_PressGestureDetector: onAttached, package=scd.lcex, windowType=2, mHiTouchRestricted=true
+
+03-24 03:07:06.734 18112 18138 D mali_winsys: EGLint new_window_surface(egl_winsys_display *, void *, EGLSurface, EGLConfig, egl_winsys_surface **, EGLBoolean) returns 0x3000
+
+03-24 03:07:06.753 18112 18112 I HwViewRootImpl: removeInvalidNode all the node in jank list is out of time
+
+03-24 03:07:06.788 18112 18138 W libEGL  : EGLNativeWindowType 0x7b3836c050 disconnect failed
+
+03-24 03:07:06.799 18112 18112 W scd.lcex: type=1400 audit(0.0:67057): avc: granted { write } for pid=18112 name="Log_2021-03-24_03-07-06.txt" dev="sdcardfs" ino=6651 scontext=u:r:untrusted_app_27:s0:c156,c256,c512,c768 tcontext=u:object_r:sdcardfs:s0 tclass=file
+
+03-24 03:07:08.508 18112 18112 V AudioManager: querySoundEffectsEnabled...
+
+03-24 03:07:09.935 18112 18112 V AudioManager: querySoundEffectsEnabled...
+
+03-24 03:07:09.995 18112 18475 W HiTouch_HiTouchSensor: depended package hiTouch does n't exist!
+
+03-24 03:07:09.995 18112 18475 I HiTouch_HiTouchSensor: HiTouch restricted: system app HiTouch don't exist.
+
+03-24 03:07:09.995 18112 18475 D HiTouch_PressGestureDetector: onAttached, package=scd.lcex, windowType=2, mHiTouchRestricted=true
+
+03-24 03:07:10.023 18112 18138 D mali_winsys: EGLint new_window_surface(egl_winsys_display *, void *, EGLSurface, EGLConfig, egl_winsys_surface **, EGLBoolean) returns 0x3000
+
+03-24 03:07:11.111 18112 18112 W Thread-12: type=1400 audit(0.0:67060): avc: granted { write } for pid=18112 name="LogcatX" dev="sdcardfs" ino=17256 scontext=u:r:untrusted_app_27:s0:c156,c256,c512,c768 tcontext=u:object_r:sdcardfs:s0 tclass=dir
+
+03-24 03:07:11.111 18112 18112 W Thread-12: type=1400 audit(0.0:67061): avc: granted { add_name } for pid=18112 name="Log_2021-03-24_03-07-11.txt" scontext=u:r:untrusted_app_27:s0:c156,c256,c512,c768 tcontext=u:object_r:sdcardfs:s0 tclass=dir
+
+03-24 03:07:11.111 18112 18112 W Thread-12: type=1400 audit(0.0:67062): avc: granted { create } for pid=18112 name="Log_2021-03-24_03-07-11.txt" scontext=u:r:untrusted_app_27:s0:c156,c256,c512,c768 tcontext=u:object_r:sdcardfs:s0:c156,c256,c512,c768 tclass=file
+
+03-24 03:07:11.124 18112 18138 W libEGL  : EGLNativeWindowType 0x7b3836b3d0 disconnect failed
+
+03-24 03:07:11.145 18112 18112 W InputEventReceiver: Attempted to finish an input event but the input event receiver has already been disposed.
+
+03-24 03:07:11.148 18112 18477 W HiTouch_HiTouchSensor: depended package hiTouch does n't exist!
+
+03-24 03:07:11.148 18112 18477 I HiTouch_HiTouchSensor: HiTouch restricted: system app HiTouch don't exist.
+
+03-24 03:07:11.148 18112 18477 D HiTouch_PressGestureDetector: onAttached, package=scd.lcex, windowType=2, mHiTouchRestricted=true
+
+03-24 03:07:11.169 18112 18138 D mali_winsys: EGLint new_window_surface(egl_winsys_display *, void *, EGLSurface, EGLConfig, egl_winsys_surface **, EGLBoolean) returns 0x3000
+
+03-24 03:07:11.236 18112 18138 W libEGL  : EGLNativeWindowType 0x7b3836b3d0 disconnect failed
+
+03-24 03:07:11.237 18112 18138 D mali_winsys: EGLint new_window_surface(egl_winsys_display *, void *, EGLSurface, EGLConfig, egl_winsys_surface **, EGLBoolean) returns 0x3000
+
+03-24 03:07:11.258 18112 18138 W libEGL  : EGLNativeWindowType 0x7ba86c4d50 disconnect failed
+
+03-24 03:07:11.318 18112 18478 W HiTouch_HiTouchSensor: depended package hiTouch does n't exist!
+
+03-24 03:07:11.318 18112 18478 I HiTouch_HiTouchSensor: HiTouch restricted: system app HiTouch don't exist.
+
+03-24 03:07:11.318 18112 18478 D HiTouch_PressGestureDetector: onAttached, package=scd.lcex, windowType=2, mHiTouchRestricted=true
+
+03-24 03:07:11.338 18112 18138 D mali_winsys: EGLint new_window_surface(egl_winsys_display *, void *, EGLSurface, EGLConfig, egl_winsys_surface **, EGLBoolean) returns 0x3000
+
+03-24 03:07:12.521 18112 18112 V AudioManager: querySoundEffectsEnabled...
+
+03-24 03:07:12.534 18112 18138 W libEGL  : EGLNativeWindowType 0x7ba86c4d50 disconnect failed
+
+03-24 03:07:12.534 18112 18138 D OpenGLRenderer: endAllActiveAnimators on 0x7b5997fa00 (RippleDrawable) with handle 0x7ba8a3d280
+
+03-24 03:07:13.562 18112 18137 D ZrHung.AppEyeUiProbe: not watching, wait.
+
+03-24 03:07:13.676 18112 18138 W libEGL  : EGLNativeWindowType 0x7bac22b450 disconnect failed
+
+03-24 03:08:15.215 18112 18137 D ZrHung.AppEyeUiProbe: restart watching
+
+03-24 03:08:15.263 18112 18138 D mali_winsys: EGLint new_window_surface(egl_winsys_display *, void *, EGLSurface, EGLConfig, egl_winsys_surface **, EGLBoolean) returns 0x3000
+
+03-24 03:08:15.274 18112 18112 I HwViewRootImpl: removeInvalidNode all the node in jank list is out of time
+
+03-24 03:08:15.791 18112 18112 V AudioManager: querySoundEffectsEnabled...
+
+03-24 03:08:16.868 18112 18112 V AudioManager: querySoundEffectsEnabled...
+
+03-24 03:08:16.916 18112 18714 W HiTouch_HiTouchSensor: depended package hiTouch does n't exist!
+
+03-24 03:08:16.916 18112 18714 I HiTouch_HiTouchSensor: HiTouch restricted: system app HiTouch don't exist.
+
+03-24 03:08:16.916 18112 18714 D HiTouch_PressGestureDetector: onAttached, package=scd.lcex, windowType=2, mHiTouchRestricted=true
+
+03-24 03:08:16.939 18112 18138 D mali_winsys: EGLint new_window_surface(egl_winsys_display *, void *, EGLSurface, EGLConfig, egl_winsys_surface **, EGLBoolean) returns 0x3000
+
+ 
